@@ -1,0 +1,6 @@
+{
+  "nodeModulesDir": "auto",
+  "imports": {
+    "tiny-ts-parser": "npm:tiny-ts-parser@^0.1.5"
+  }
+}
