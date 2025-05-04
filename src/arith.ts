@@ -11,7 +11,7 @@ type Term =
   | { tag: "number"; n: number }
   | { tag: "add"; left: Term; right: Term };
 
-function typecheck(t: Term): Type {
+export function typecheck(t: Term): Type {
   switch (t.tag) {
     case "true":
       return { tag: "Boolean" };
@@ -39,4 +39,4 @@ function typecheck(t: Term): Type {
   }
 }
 
-console.log(typecheck(parseArith("true ? 1 : true")));
+console.log(typecheck(parseArith("1 + 2")));
