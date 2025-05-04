@@ -39,4 +39,7 @@ export function typecheck(t: Term): Type {
   }
 }
 
-console.log(typecheck(parseArith("1 + 2")));
+// Learn more at https://docs.deno.com/runtime/manual/examples/module_metadata#concepts
+if (import.meta.main) {
+  console.log(typecheck(parseArith("1 + 2")));
+}
