@@ -41,3 +41,5 @@ Untitled*.ipynb
 
 # playwright browser binary cache
 /.ms-playwright
+
+node_modules/*
